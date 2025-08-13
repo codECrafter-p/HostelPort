@@ -1,0 +1,14 @@
+# node_modules
+node_modules/
+
+# Environment files
+.env
+frontend/.env
+backend/.env
+
+# build or dist folders
+build/
+dist/
+
+# Logs
+*.log
