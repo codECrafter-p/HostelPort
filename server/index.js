@@ -16,7 +16,15 @@ app.use(cors());
 app.use(express.json());
 
 
-mangodb();    
+mangodb();  
+
+
+app.get('/',(req,res)=>{
+  res.send({
+    activeStatus:true,
+    error:false,
+  })
+})
 
 
 
