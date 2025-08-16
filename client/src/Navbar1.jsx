@@ -11,6 +11,9 @@ import axios from "axios";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
+
+const API = process.env.REACT_APP_API_BASE_URL;
+
 function Navbar1() {
   const [startDate, setStartDate] = useState(null);
   const [endDate, setEndDate] = useState(null);
@@ -69,7 +72,7 @@ function Navbar1() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/hosteldetails")
+      .get(`${API}/hosteldetails`)
       .then((res) => setHostels(res.data))
       .catch((err) => console.log(err));
   }, []);

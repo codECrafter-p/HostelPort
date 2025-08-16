@@ -13,7 +13,7 @@ import Navbar1 from "./Navbar1";
 import Front from "./Front";
 import Footer from "./Footer";
 
-
+const API = process.env.REACT_APP_API_BASE_URL;
 
 function Cart() {
 
@@ -23,7 +23,7 @@ function Cart() {
 
 
   const getData = async () => {
-    const result = await axios.get("http://localhost:5000/hosteldetails");
+    const result = await axios.get(`${API}/hosteldetails`);
     setdata(result.data);
     console.log(result.data);
   };

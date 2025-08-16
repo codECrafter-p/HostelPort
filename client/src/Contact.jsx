@@ -3,6 +3,8 @@ import axios from 'axios';
 import './css/Contact.css'; 
 import code from "./images/contact1.png";
 
+const API = process.env.REACT_APP_API_BASE_URL;
+
 function Contact() {
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
@@ -14,7 +16,7 @@ function Contact() {
     event.preventDefault();
     setLoading(true);
     try {
-      await axios.post('http://localhost:3000/contact', { email, name, phone, message });
+      await axios.post(`${API}/contact`, { email, name, phone, message });
       alert("Message sent successfully!");
 
       // Reset form fields

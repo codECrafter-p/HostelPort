@@ -17,6 +17,9 @@ import summary from "./rooms/summary.png";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
+
+const API = process.env.REACT_APP_API_BASE_URL;
+
 function HostelDetailsPage() {
   const [det, setDetails] = useState(null);
 
@@ -28,7 +31,7 @@ function HostelDetailsPage() {
   const getData = async () => {
     try {
       const resulthostel = await axios.get(
-        `http://localhost:5000/roomdetails/${hostelid}/details`
+        `${API}/roomdetails/${hostelid}/details`
       );
       if (resulthostel.data) {
         setDetails(resulthostel.data);

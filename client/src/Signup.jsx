@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./css/Signup.css";
 import axios from "axios";
 
+const API = process.env.REACT_APP_API_BASE_URL;
+
 function Signup() {
   const [name, setname] = useState();
   const [phoneno, setphoneno] = useState();
@@ -31,7 +33,7 @@ function Signup() {
   const handleClick = async (event) => {
     event.preventDefault();
 
-    const signData = await axios.post("http://localhost:5000/signup", {
+    const signData = await axios.post(`${API}/signup`, {
       name,
       phoneno,
       email,
