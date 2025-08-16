@@ -1,0 +1,17 @@
+.about-container{
+    /* background-color: #e83e5a; */
+    width: 100vw;
+    height: 100vh;
+    
+    padding: 45px;
+}
+.main{
+    margin-top: 50px;
+    text-align: center;
+    
+}
+
+.image-container img{
+width: 70vw;
+margin-left: 15vw;
+}

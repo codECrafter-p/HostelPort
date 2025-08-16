@@ -1,0 +1,36 @@
+body, html {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.frnt{
+    background-color: aqua;
+    
+    height: 100vh;
+  
+    background-image: url('../rooms/front5.png');
+    background-size: contain;
+    /* overflow-x: hidden; */
+    
+}
+.frnt2{
+    
+   height: 100vh;
+    background-image: url('../rooms/hbalcon.png');
+    background-size: contain;
+}
+.frnt3{
+    
+   height: 100vh;
+    background-image: url('../rooms/hgardn.png');
+    background-size: contain;
+}
+.frnt h2{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    padding-top: 420px;
+    padding-left: 150px;
+    letter-spacing: 0.2em;
+    word-spacing: 0.4em;
+   
+}

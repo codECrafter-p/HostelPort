@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+
+.signup-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 40px 30px;
+  /* border: 1px solid #eee;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05); */
+  border: 1px solid rgb(216, 45, 73);
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgb(216, 45, 73);
+  background-color: #fff;
+  text-align: left;
+}
+
+
+.signup-container h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.signup-container .subtitle {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 25px;
+}
+
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-form label {
+  margin-bottom: 6px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.signup-form input {
+  padding: 12px 10px;
+  margin-bottom: 18px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+.signup-form input:focus {
+  outline: none;
+  border-color: #000;
+}
+
+.signup-button {
+  background-color:rgb(236, 92, 92);
+  border: none;
+  padding: 14px;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.signup-button:hover {
+  background-color: rgb(236, 92, 92);
+}
+
+.login-text {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 15px;
+  color: #666;
+}
+
+.login-link {
+  font-weight: bold;
+  color: #000;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 25px 0;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #ccc;
+}
+
+.divider span {
+  padding: 0 10px;
+  color: #999;
+  font-size: 13px;
+}
+
+
+.social-buttons {
+  display: flex;  
+  justify-content: center;
+  gap: 10px; 
+  /* background-color: red; */
+  margin-left: 150x;
+  }
+
+
+
+
+.google-btn,
+.facebook-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  font-weight: 500;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.google-btn img,
+.facebook-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+
+.terms-text {
+  font-size: 12px;
+  color: #666;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.link {
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+}
+
+.term-text{
+    text-align: center;
+}

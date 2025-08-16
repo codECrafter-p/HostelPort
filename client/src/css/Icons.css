@@ -1,0 +1,8 @@
+img{
+    width: 30px;
+}
+.iconsColl{
+    padding: 30px;
+    display: flex;
+    gap: 25px;
+}

@@ -1,0 +1,119 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(214, 65, 90);
+    display: flex;
+    justify-content:space-between;
+    /* color: white; */
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    /* background-color:white; */
+ 
+}
+nav{
+    margin-left:310px;
+}
+nav ul {
+ display: flex;
+ width: 80vw;
+     height: 10vh;
+ justify-content:center;
+ align-items: center;
+ position: relative;
+  margin-right: 0px;
+ /* gap: 70px; */
+}
+
+
+nav ul li{
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    margin-right: 45px;
+    gap: -20px;
+   
+}
+nav ul li:hover{
+    box-shadow:1px 1px 10px rgb(239, 21, 57) ;
+}
+nav ul li a{
+    text-decoration: none;
+    /* color: white; */
+    display: block;
+    padding: 10px 20px;
+}
+nav ul li button{
+    border: none;
+    background-color: white;
+    font-size: 18px;
+   
+}
+nav ul li button a{
+    color: white;
+    background-color:rgb(214, 65, 90);
+}
+.dropdown button{
+    color: white;
+    background-color:rgb(214, 65, 90) ;
+}
+
+.dropdown-menu{
+   
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: auto;
+    height: auto;
+    z-index: 1000;
+    padding: 20px;
+    margin-top: 15px;
+    display: flex;
+     /* display: none; */
+    gap: 20px;
+    top: 100%;
+    left: 0;
+    color: black;
+    border-radius: 20px;
+     box-shadow: 2px 2px 10px rgb(214, 65, 90) ;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+
+}
+.column a{
+    padding: 5px 0;
+    white-space: nowrap;
+    background-color: white;
+    font-size: 15px;
+    color: black;
+   
+}
+/* .hostelLogo{
+    background-color: white;
+    width: 55px;
+    margin-left: 75px;
+    margin-top: 20px;
+} */
+ .logo{
+    margin-top: 14px;
+    margin-left: 55px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* background-color:rgb(214, 65, 90); */
+    /* box-shadow:1px 1px 10px rgb(239, 21, 57) ; */
+   
+ }
+.twoicon button{
+    font-size:22px ;
+}
+

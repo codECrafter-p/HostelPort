@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-container {
+  width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  text-align: left;
+  border: 1px solid rgb(216, 45, 73);
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgb(216, 45, 73);
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.subtitle {
+  color: gray;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-top: 15px;
+  font-weight: bold;
+  display: block;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.forgot-password {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.forgot-password a {
+  text-decoration: none;
+  color: #3b57eb;
+  font-size: 14px;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 14px;
+  background-color: rgb(236, 92, 92);
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.signup-text {
+  text-align: center;
+  font-size: 14px;
+  color: gray;
+  margin-top: -10px;
+}
+
+.signup-text a {
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+  background: #ccc;
+}
+
+.or {
+  margin: 0 10px;
+  color: gray;
+  font-weight: 600;
+}
+
+.social-buttons {
+  display: flex;
+  width: 40px;
+  gap: 10px;
+  justify-content: center;
+  margin-left: 150px;
+  
+}
+
+.gimg,
+.fimg {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #fff;
+}
+
+.gimg img,
+.fimg img {
+  /* height: 20px; */
+  width: 20px;
+}

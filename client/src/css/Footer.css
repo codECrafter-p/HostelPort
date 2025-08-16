@@ -1,0 +1,103 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+.footer1{
+    margin-top: 60px;
+}
+.dest-section{
+
+ display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 16px;
+      color: black;
+        padding: 0px 150px;
+}
+
+.dest-headeing{
+    /* display: flex; */
+    
+}
+.dest-line{
+   flex-grow: 1;
+    height: 1px;
+    background-color:#ccc;
+  
+   
+}
+
+.dest ul{
+    display: flex;
+    justify-content: center;
+    gap: 65px;
+    
+  
+
+}
+.dest ul li{
+    list-style: none;
+    
+}
+.dest ul li a{
+ text-decoration: none;
+ color: black;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+
+.footer2{
+    margin-top: 100px;
+    background-color: black;
+    color: white;
+}
+.list1{
+    height: 10vh;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+.sm{
+    
+    font-size: 34px;
+}
+.sm a{
+    color: white;
+    margin-left: 32px;
+}
+.res{
+    height: 10vh;
+  text-align: center;
+   margin-top: 30px;
+}
+.list2{
+    height: 35vh;
+    display: flex;
+    gap: 130px;
+    justify-content: center;
+    align-items: center;
+}
+.c1,.c2,.c3,.c4{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.list2 h3{
+    color: rgba(255, 170, 0, 0.919);
+    margin-bottom: 8px;
+}
+.list2 a{
+    color: white;
+    text-decoration: none;
+}
+.hotelLogo{
+    width: 50px;
+  
+}
+.dest li{
+    font-size: 25px;
+    margin-top: 30px;
+      transition: transform 0.3s ease-in-out;
+}
+.dest li:hover{
+    color:rgb(232, 62, 90) ;
+     transform: scale(1.05);
+    cursor: pointer;
+}
