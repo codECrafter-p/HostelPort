@@ -11,8 +11,7 @@ import Front from './Front';
 import Login from './Login';
 import Hazaribagh from './Extra/Hazaribagh';
 import Hostelroom from './Extra/Hostelroom';
-// import HostelDiv1 from './HostelDiv1';
-// import HostelDiv2 from './HostelDiv2';
+
 import HostelDetailsPage from './HostelDetailsPage';
 import Explore from './Explore';
 import PaymentPage from './PaymentPage';
@@ -41,8 +40,11 @@ function Routerpage() {
             <Route path="/about" element={<About/>}/>
             <Route path="/hzb" element={<Hazaribagh/>}/>
             <Route path="/hr" element={<Hostelroom/>}/>
-            {/* <Route path="/hosteldiv1" element={<HostelDiv1/>}/> */}
-            {/* <Route path="/hosteldiv2" element={<HostelDiv2/>}/> */}
+            <Route path="/footer" element={<Footer/>}/>
+            <Route path="/front" element={<Front/>}/>
+            <Route path="/navbar" element={<Navbar/>}/>
+            <Route path="/navbar1" element={<Navbar1/>}/>
+           
             <Route path="/details/:hostelid" element={<HostelDetailsPage/>}/>
             <Route path="/explore" element={<Explore/>}/>
             <Route path="/paymentpage" element={<PaymentPage/>}/>

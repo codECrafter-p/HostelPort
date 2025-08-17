@@ -13,7 +13,7 @@ import dustbin from "./rooms/dustbin.svg";
 import locker from "./rooms/locker.svg";
 import scratch from "./rooms/scratch.svg";
 import offer from "./rooms/offer.svg";
-import summary from "./rooms/summary.png";
+// import summary from "./rooms/summary.png";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 

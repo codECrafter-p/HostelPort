@@ -14,7 +14,7 @@ function Desthostel() {
   const navigate = useNavigate();
 
   const getData = async () => {
-    const result = await axios.get("${API}/hosteldetails");
+    const result = await axios.get(`${API}/hosteldetails`);
     setdata(result.data);
     console.log(result.data);
   };

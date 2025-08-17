@@ -2,8 +2,7 @@ import React from "react";
 import "./css/Footer.css";
 import { Link } from "react-router-dom";
 import logo from "./icons/logoHostel.png";
-import whatsapp from "./images/whatsapp.png";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 function Footer() {
   // const navigate=useNavigate();

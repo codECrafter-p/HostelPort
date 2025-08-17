@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./css/Navbar.css";
 import { useState } from "react";
-import logo from "./icons/logoHostel.png";
+// import logo from "./icons/logoHostel.png";
 // import logo from './icons/hotel-sign-svgrepo-com.svg'
 
 {

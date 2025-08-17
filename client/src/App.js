@@ -1,37 +1,43 @@
 
-import { useEffect, useState } from 'react';
-import './App.css';
-import axios from 'axios';
+// import { useEffect, useState } from 'react';
+// import './App.css';
+// import axios from 'axios';
 
-const API = process.env.REACT_APP_API_BASE_URL;
+// // const API = process.env.REACT_APP_API_BASE_URL;
 
-function App() {
+// function App() {
 
-   const [data,setData]=useState([]);
-   const getData=async() => {
-    const response=await axios.get('${API}/home');
-    setData(response.data);
-    console.log(response.data);
-   }
-   useEffect(()=>{
-    getData();
-   },[]
- );
+//    const [data,setData]=useState([]);
+//    const getData=async() => {
+//     const response=await axios.get('${API}/home');
+//     setData(response.data);
+//     console.log(response.data);
+//    }
+//    useEffect(()=>{
+//     getData();
+//    },[]
+//  );
 
-  return (
-    <div className="App">
+//   return (
+//     <div className="App">
      
-    {
-      data.map((cat,i)=>(
-        <div>
-          <img src={cat.hostelRoomImage}/>
-          <h1>{cat.hostelTitle}</h1>
-        </div>
-      ))
-    }
+//     {
+//       data.map((cat,i)=>(
+//         <div>
+//           <img src={cat.hostelRoomImage} alt=''/>
+//           <h1>{cat.hostelTitle}</h1>
+//         </div>
+//       ))
+//     }
 
-    </div>
-  );
-}
+//     </div>
+//   );
+// }
 
-export default App;
+// export default App;
+
+
+// "start": "react-scripts start",
+    // "build": "react-scripts build",
+    // "test": "react-scripts test",
+    // "eject": "react-scripts eject"
