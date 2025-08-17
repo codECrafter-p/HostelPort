@@ -132,11 +132,14 @@ app.post("/login",async(req,res)=>{
 //     })
 
 
-const tree = () => {
-  console.log("local server is running");
-};
+// const tree = () => {
+//   console.log("local server is running");
+// };
 
-const port = 5000;
-app.listen(port, tree);
+const port =  process.env.PORT || 5000;
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
+});
+// app.listen(port, tree);
 
 
