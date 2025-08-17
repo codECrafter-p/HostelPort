@@ -72,7 +72,7 @@ function Navbar1() {
 
   useEffect(() => {
     axios
-      .get(`${API}/hosteldetails`)
+      .get(`${API}/hosteldetails/`)
       .then((res) => setHostels(res.data))
       .catch((err) => console.log(err));
   }, []);

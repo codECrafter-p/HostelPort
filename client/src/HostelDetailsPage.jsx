@@ -33,7 +33,6 @@ function HostelDetailsPage() {
     try {
       const resulthostel = await axios.get(
         `${API}/roomdetails/${hostelid}/details`
-        // `http://localhost:5000/hostelroom/roomdetails/${hostelid}/details`
       );
       if (resulthostel.data) {
         setDetails(resulthostel.data);
