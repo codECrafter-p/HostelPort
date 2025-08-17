@@ -10,7 +10,7 @@ const hostelRoomSchema = require("./hostelRoomSchema");
 const hostelDetailSchema=require('./hostelDetailSchema')
 const adminRoute = require("./router/admin-router");
 
-const serverless=require("serverless-http");
+// const serverless=require("serverless-http");
 
 //Middleware
 // app.use(cors());
@@ -149,5 +149,5 @@ app.listen(port, () => {
 });
 // app.listen(port, tree);
 
-module.export=app;
-module.exports.handler=serverless(app);
+// module.export=app;
+// module.exports.handler=serverless(app);
