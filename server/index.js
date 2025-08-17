@@ -12,7 +12,12 @@ const adminRoute = require("./router/admin-router");
 
 
 //Middleware
-app.use(cors());
+// app.use(cors());
+app.use(cors({
+  origin: "https://hostelport.netlify.app",
+  methods: ["GET","POST","PUT","DELETE"],
+  credentials: true
+}));
 app.use(express.json());
 
 
