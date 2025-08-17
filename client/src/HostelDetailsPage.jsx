@@ -19,6 +19,7 @@ import Footer from "./Footer";
 
 
 const API = process.env.REACT_APP_API_BASE_URL;
+console.log("API URL",API);
 
 function HostelDetailsPage() {
   const [det, setDetails] = useState(null);

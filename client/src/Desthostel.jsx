@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 const API = process.env.REACT_APP_API_BASE_URL;
+console.log("API URL",API);
 
 function Desthostel() {
   const [data, setdata] = useState([]);
