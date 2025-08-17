@@ -44,7 +44,6 @@ function Routerpage() {
             <Route path="/front" element={<Front/>}/>
             <Route path="/navbar" element={<Navbar/>}/>
             <Route path="/navbar1" element={<Navbar1/>}/>
-           
             <Route path="/details/:hostelid" element={<HostelDetailsPage/>}/>
             <Route path="/explore" element={<Explore/>}/>
             <Route path="/paymentpage" element={<PaymentPage/>}/>
