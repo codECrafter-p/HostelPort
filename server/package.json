@@ -4,6 +4,8 @@
   "description": "Plan your getaway with India's largest backpacker hostel chain. Travel across 55+ locations with our stunning, experience-led backpacker hostels in India.",
   "main": "index.js",
   "scripts": {
+     "start": "node index.js",
+  "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
