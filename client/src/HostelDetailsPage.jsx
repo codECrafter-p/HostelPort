@@ -18,8 +18,8 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 
 
-const API = process.env.REACT_APP_API_BASE_URL;
-console.log("API URL",API);
+// const API = process.env.REACT_APP_API_BASE_URL;
+// console.log("API URL",API);
 
 function HostelDetailsPage() {
   const [det, setDetails] = useState(null);
@@ -32,7 +32,8 @@ function HostelDetailsPage() {
   const getData = async () => {
     try {
       const resulthostel = await axios.get(
-        `${API}/roomdetails/${hostelid}/details`
+        // `${API}/roomdetails/${hostelid}/details`
+        `http://localhost:5000/roomdetails/${hostelid}/details`
       );
       if (resulthostel.data) {
         setDetails(resulthostel.data);

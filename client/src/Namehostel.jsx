@@ -14,7 +14,8 @@ function Namehostel() {
   const navigate = useNavigate();
 
   const getData = async () => {
-    const result = await axios.get(`${API}/hosteldetails`);
+    // const result = await axios.get(`${API}/hosteldetails`);
+    const result = await axios.get(`http://localhost:5000/hosteldetails`);
     setdata(result.data);
     console.log(result.data);
   };

@@ -78,9 +78,9 @@ function PaymentPage() {
       },
       prefill: {
         //We recommend using the prefill parameter to auto-fill customer's contact information especially their phone number
-        name: "Gaurav Kumar", //your customer's name
-        email: "gaurav.kumar@example.com",
-        contact: "+919876543210", //Provide the customer's phone number for better conversion rates
+        name: "<name>", //your customer's name
+        email: "<email>",
+        contact: "<phone>", //Provide the customer's phone number for better conversion rates
       },
       notes: {
         address: "Razorpay Corporate Office",

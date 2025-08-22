@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "./css/Signup.css";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
-const API = process.env.REACT_APP_API_BASE_URL;
+// const API = process.env.REACT_APP_API_BASE_URL;
 
 function Signup() {
   const [name, setname] = useState();
@@ -33,7 +34,8 @@ function Signup() {
   const handleClick = async (event) => {
     event.preventDefault();
 
-    const signData = await axios.post(`${API}/signup`, {
+    // const signData = await axios.post(`${API}/signup`, {
+    const signData = await axios.post("http://localhost:5000/signup", {
       name,
       phoneno,
       email,
@@ -61,7 +63,7 @@ function Signup() {
        </form>
 
         <p className="login-text">
-          Already have an account? <span className="login-link">Login</span>
+          Already have an account? <Link to="/login" className="login-link">Login</Link>
         </p>
         
         <div className="divider">

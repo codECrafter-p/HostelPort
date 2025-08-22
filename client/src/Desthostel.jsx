@@ -5,8 +5,8 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-const API = process.env.REACT_APP_API_BASE_URL;
-console.log("API URL",API);
+// const API = process.env.REACT_APP_API_BASE_URL;
+// console.log("API URL",API);
 
 function Desthostel() {
   const [data, setdata] = useState([]);
@@ -15,7 +15,8 @@ function Desthostel() {
   const navigate = useNavigate();
 
   const getData = async () => {
-    const result = await axios.get(`${API}/hosteldetails`);
+    // const result = await axios.get(`${API}/hosteldetails`);
+    const result = await axios.get(`http://localhost:5000/hosteldetails`);
     setdata(result.data);
     console.log(result.data);
   };

@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import "./css/Login.css";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-const API = process.env.REACT_APP_API_BASE_URL;
+// const API = process.env.REACT_APP_API_BASE_URL;
 
 function Login() {
   const [email, setemail] = useState();
@@ -22,7 +23,8 @@ function Login() {
 
   const handleClick = async (event) => {
     event.preventDefault();
-    const result = await axios.post(`${API}/login`, {
+    // const result = await axios.post(`${API}/login`, {
+      const result = await axios.post("http://localhost:5000/login", {
       email,
       password,
     });
@@ -68,7 +70,7 @@ function Login() {
          <a href="">Forgot Password </a> <h3>Login</h3>{" "}
         </div>
         <div className="signup-text">
-          Don't have an account? <a href="">Create account</a>
+          Don't have an account? <Link to="/signup">Create account</Link>
         </div>
        <div className="divider">
          <span className="line"></span>
