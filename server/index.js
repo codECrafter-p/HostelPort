@@ -18,17 +18,21 @@ const jwt = require("jsonwebtoken");
 
 
 
+// app.use(cors({
+//   origin: [
+//     "http://localhost:3000",
+//     "http://localhost:3001",
+//     "https://hostelport.netlify.app",
+//     "https://hostel-port.vercel.app"
+//   ],
+//   methods: ["GET", "POST", "PUT", "DELETE"],
+//   credentials: true
+// }));
+
 app.use(cors({
-  origin: [
-    "http://localhost:3000",
-    "http://localhost:3001",
-    "https://hostelport.netlify.app",
-    "https://hostel-port.vercel.app"
-  ],
-  methods: ["GET", "POST", "PUT", "DELETE"],
+  origin: true,
   credentials: true
 }));
-
 
 
 app.use(express.json());
