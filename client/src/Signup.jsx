@@ -35,7 +35,8 @@ function Signup() {
     event.preventDefault();
 
     // const signData = await axios.post(`${API}/signup`, {
-    const signData = await axios.post("http://localhost:5000/signup", {
+    // const signData = await axios.post("http://localhost:5000/signup", {
+    const signData = await axios.post("${import.meta.env.VITE_API_URL}/signup", {
       name,
       phoneno,
       email,
@@ -47,7 +48,7 @@ function Signup() {
   return (
     <div className="signup-container">
       
-        <h1>Create account</h1>
+        <h1>Create account <span><Link to="/home" style={{marginLeft:'180px', fontSize:'20px', color:'#e83e5a'}}><i class="bi bi-x-circle"></i></Link></span> </h1>
         <p>Sign up for the best prices,offers and rewards</p>
 
        <form action="" className="signup-form">

@@ -33,7 +33,8 @@ function HostelDetailsPage() {
     try {
       const resulthostel = await axios.get(
         // `${API}/roomdetails/${hostelid}/details`
-        `http://localhost:5000/roomdetails/${hostelid}/details`
+        // `http://localhost:5000/roomdetails/${hostelid}/details`
+        `${import.meta.env.VITE_API_URL}/roomdetails/${hostelid}/details`
       );
       if (resulthostel.data) {
         setDetails(resulthostel.data);
@@ -52,11 +53,11 @@ function HostelDetailsPage() {
     }
   }, [hostelid]);
 
-  const handleBookingChange = (price, title, availablebed, personcount) => {
+  const handleBookingChange = (title,price, availablebed, personcount) => {
     navigate("/paymentpage", {
       state: {
-        rooms: price,
         title: title,
+        price: price,
         bed: availablebed,
         personcount: personcount,
         checkIn,

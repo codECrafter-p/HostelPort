@@ -73,7 +73,8 @@ function Navbar1() {
   useEffect(() => {
     axios
       // .get(`${API}/hosteldetails/`)
-      .get(`http://localhost:5000/hosteldetails/`)
+      // .get(`http://localhost:5000/hosteldetails/`)
+      .get(`${import.meta.env.VITE_API_URL}/hosteldetails/`)
       .then((res) => setHostels(res.data))
       .catch((err) => console.log(err));
   }, []);

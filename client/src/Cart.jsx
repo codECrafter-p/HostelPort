@@ -24,7 +24,8 @@ function Cart() {
 
   const getData = async () => {
     // const result = await axios.get(`${API}/hosteldetails/`);
-    const result = await axios.get(`http://localhost:5000/hosteldetails/`);
+    // const result = await axios.get(`http://localhost:5000/hosteldetails/`);
+    const result = await axios.get(`${import.meta.env.VITE_API_URL}/hosteldetails/`);
     setdata(result.data);
     console.log(result.data);
   };

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import './css/Contact.css'; 
 import code from "./images/contact1.png";
+import Navbar from './Navbar';
 
 // const API = process.env.REACT_APP_API_BASE_URL;
 
@@ -17,7 +18,8 @@ function Contact() {
     setLoading(true);
     try {
       // await axios.post(`${API}/contact`, { email, name, phone, message });
-      await axios.post(`http://localhost:5000/contact`, { email, name, phone, message });
+      // await axios.post(`http://localhost:5000/contact`, { email, name, phone, message });
+      await axios.post(`${import.meta.env.VITE_API_URL}/contact`, { email, name, phone, message });
       alert("Message sent successfully!");
 
       // Reset form fields
@@ -35,6 +37,7 @@ function Contact() {
 
   return (
     <div className="contactus-container">
+      <Navbar/>
       <div className='contactus-wrapper'>
         <div className="contact-header">
           <div className="contact-text">

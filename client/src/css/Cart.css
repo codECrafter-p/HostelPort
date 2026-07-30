@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 .pop{
     margin-top: 40px;
@@ -85,7 +86,7 @@ h1{
 }
 .collection2 img{
     width: 700px;
-    height: 400px;
+    height:400px;
     border-radius: 18px;
 }
 .collection3{
@@ -96,7 +97,7 @@ h1{
    
 }
 .collection3 img{
-    width: 700px;
+    width:700px;
     height: 400px;
       border-radius: 18px;
 }

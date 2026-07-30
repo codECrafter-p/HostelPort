@@ -6,7 +6,8 @@ function AdminPage() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/auth/users") // direct backend URL
+    // fetch("http://localhost:5000/api/auth/users") // direct backend URL
+    fetch("${import.meta.env.VITE_API_URL}/api/auth/users") // direct backend URL
       .then((res) => {
         if (!res.ok) throw new Error("Failed to fetch users");
         return res.json();

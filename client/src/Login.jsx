@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./css/Login.css";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 // const API = process.env.REACT_APP_API_BASE_URL;
@@ -10,6 +11,8 @@ function Login() {
   const [email, setemail] = useState();
   const [password, setpassword] = useState();
   const navigate = useNavigate();
+  const location = useLocation();
+  
 
   const handleChangeEmail = (event) => {
     setemail(event.target.value);
@@ -24,41 +27,41 @@ function Login() {
   const handleClick = async (event) => {
     event.preventDefault();
     // const result = await axios.post(`${API}/login`, {
-      const result = await axios.post("http://localhost:5000/login", {
+      // const result = await axios.post("http://localhost:5000/login", {
+      const result = await axios.post("${import.meta.env.VITE_API_URL}/login", {
       email,
       password,
     });
 
     if (result.data.message === "success") {
-           localStorage.setItem("token", result.data.token);
+
       const userData = result.data.user;
-      // console.log("user information:",userData);
+        // Extract required fields for Razorpay prefill
+      const loggedInUser = {
+        name: userData.name,
+        email: userData.email,
+        phoneno: userData.phoneno, // make sure backend sends this
+      };
+     
+     // Save user info to localStorage
+      localStorage.setItem("user", JSON.stringify(result.data.user));
+
+      localStorage.setItem("token", result.data.token);
+      
+        navigate(location.state?.from || "/home");
+      // const userData = result.data.user;
       alert(result.data.message);
-      // navigate("/homee",{state:{user:userData}});
 
-      // navigate("/home");
-    
-
-      navigate("/profile", {
-        state: {
-          email: email,
-        },
-       
-      });
     } else if (result.data.message === "incorrect") {
       alert("Password is incorrect");
     } else if (result.data.message === "not exist") {
       alert("User not exist");
     }
-
-   
-
   };
-
   return (
     <div className="login-container">
       
-        <h1>Welcome Back</h1>
+        <h1>Welcome Back <span><Link to="/home" style={{marginLeft:'70px', fontSize:'20px', color:'#e83e5a'}}><i class="bi bi-x-circle"></i></Link></span></h1>
         <p className="subtitle">ohai traveller, great to seee you again! </p>
 
         <label htmlFor="email">Email</label>

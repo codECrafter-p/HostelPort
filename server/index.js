@@ -9,6 +9,7 @@ const axios =require('axios');
 const hostelRoomSchema = require("./hostelRoomSchema");
 const hostelDetailSchema=require('./hostelDetailSchema')
 const adminRoute = require("./router/admin-router");
+const jwt = require("jsonwebtoken");
 
 // const serverless=require("serverless-http");
 
@@ -71,15 +72,20 @@ app.post("/login",async(req,res)=>{
  if(userexist){
     if(userexist.password===password)
     {
+
+       // (Optional) JWT token creation
+  // const token = jwt.sign({ id: user._id }, "SECRET", { expiresIn: "1d" });
+
       res.json({
         message:"success",
         user:{
           id:userexist._id,
           name:userexist.name,
-          email:userexist.email
-
+          email:userexist.email,
+           phoneno: userexist.phoneno
         }
       });
+
       console.log("success");
     }else{
       res.json({message:"incorrect"});

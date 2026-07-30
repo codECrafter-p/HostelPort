@@ -25,13 +25,12 @@ import Searchhostel from './Extra/Searchhostel';
 import AdminPage from './AdminPage';
 
 
-
 function Routerpage() {
   return (
     <div>
         
         <Routes>
-            <Route path="/hostelport" element={<Explore/>}/>
+            <Route path="/" element={<Explore/>}/>
             <Route path="/home" element={<Cart/>}/>
             <Route path="/main" element={<App/>}/>
             <Route path="/login" element={<Login/>}/>
