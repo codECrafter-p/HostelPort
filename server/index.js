@@ -160,11 +160,13 @@ app.post("/login",async(req,res)=>{
 //     })
 
 
-const port = process.env.PORT || 5000;
+module.exports = app;
 
-app.listen(port, () => {
-  console.log(`Server running on port ${port}`);
-});
+// const port = process.env.PORT || 5000;
+
+// app.listen(port, () => {
+//   console.log(`Server running on port ${port}`);
+// });
 
 // const tree = () => {
 //   console.log("local server is running");
