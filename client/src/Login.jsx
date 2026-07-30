@@ -28,7 +28,7 @@ function Login() {
     event.preventDefault();
     // const result = await axios.post(`${API}/login`, {
       // const result = await axios.post("http://localhost:5000/login", {
-      const result = await axios.post("${import.meta.env.VITE_API_URL}/login", {
+      const result = await axios.post("${process.env.REACT_APP_API_BASE_URL}/login", {
       email,
       password,
     });

@@ -74,9 +74,10 @@ function Navbar1() {
     axios
       // .get(`${API}/hosteldetails/`)
       // .get(`http://localhost:5000/hosteldetails/`)
-      .get(`${import.meta.env.VITE_API_URL}/hosteldetails/`)
+      .get(`${process.env.REACT_APP_API_BASE_URL}/hosteldetails/`)
       .then((res) => setHostels(res.data))
       .catch((err) => console.log(err));
+      console.log(process.env.REACT_APP_API_BASE_URL);
   }, []);
 
   const handleSearchChange = (e) => {

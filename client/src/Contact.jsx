@@ -19,7 +19,7 @@ function Contact() {
     try {
       // await axios.post(`${API}/contact`, { email, name, phone, message });
       // await axios.post(`http://localhost:5000/contact`, { email, name, phone, message });
-      await axios.post(`${import.meta.env.VITE_API_URL}/contact`, { email, name, phone, message });
+      await axios.post(`${process.env.REACT_APP_API_BASE_URL}/contact`, { email, name, phone, message });
       alert("Message sent successfully!");
 
       // Reset form fields

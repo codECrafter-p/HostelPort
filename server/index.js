@@ -14,13 +14,21 @@ const jwt = require("jsonwebtoken");
 // const serverless=require("serverless-http");
 
 //Middleware
-app.use(cors());
+// app.use(cors());
 
-// app.use(cors({
-//   origin: ["https://hostelport.netlify.app"], // your frontend domain
-//   methods: ["GET", "POST", "PUT", "DELETE"],
-//   credentials: true
-// }));
+
+
+app.use(cors({
+  origin: [
+    "http://localhost:3000",
+    "http://localhost:3001",
+    "https://hostel-port.vercel.app"
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}));
+
+
 
 app.use(express.json());
 
@@ -147,11 +155,17 @@ app.post("/login",async(req,res)=>{
 //     })
 
 
-const tree = () => {
-  console.log("local server is running");
-};
-const port=5000;
-app.listen(port, tree);
+const port = process.env.PORT || 5000;
+
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
+});
+
+// const tree = () => {
+//   console.log("local server is running");
+// };
+// const port=5000;
+// app.listen(port, tree);
 
 // const port =  process.env.PORT || 5000;
 // app.listen(port, () => {

@@ -36,7 +36,7 @@ function Signup() {
 
     // const signData = await axios.post(`${API}/signup`, {
     // const signData = await axios.post("http://localhost:5000/signup", {
-    const signData = await axios.post("${import.meta.env.VITE_API_URL}/signup", {
+    const signData = await axios.post("${process.env.REACT_APP_API_BASE_URL}/signup", {
       name,
       phoneno,
       email,

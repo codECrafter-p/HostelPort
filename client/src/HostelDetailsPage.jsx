@@ -34,7 +34,7 @@ function HostelDetailsPage() {
       const resulthostel = await axios.get(
         // `${API}/roomdetails/${hostelid}/details`
         // `http://localhost:5000/roomdetails/${hostelid}/details`
-        `${import.meta.env.VITE_API_URL}/roomdetails/${hostelid}/details`
+        `${process.env.REACT_APP_API_BASE_URL}/roomdetails/${hostelid}/details`
       );
       if (resulthostel.data) {
         setDetails(resulthostel.data);
